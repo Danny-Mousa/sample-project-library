@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wisdom Library</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet prefetch" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
+    <script src="https://kit.fontawesome.com/ece5514f1a.js"></script>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/script.js" ></script>
+  </head>
+
+  <body id="top">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#collapsable-nav"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            <a href="#"><span class="grayNav">Wisdom </span>Library</a>
+          </div>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#collection">Our Collection</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- #nav-list -->
+        </div>
+        <!-- .collapse .navbar-collapse -->
+      </nav>
+    </header>
+
+    <main id="main-content" class="container-fluid">
+      <section class="jumbotron currentSection" data-nav="#">
+        <div class="overlay"></div>
+        <div class="brief">
+          <p class="animatedText" data-animation="fallB">
+            “Books are a uniquely portable magic”
+          </p>
+          <p class="animatedText" data-animation="fallC">
+            ―Stephen King
+          </p>
+          <div class="homeBtn">
+            <a href="#contact" class="animatedText hidden">Contact</a>
+            <a
+              href="#collection"
+              class="animatedText hidden"
+              >Our Collection</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="row about currentSection" data-nav="#about">
+        <h1 class="text-center animated" data-animation="fadeInLeftLong">
+          About Us
+        </h1>
+        <div class="animated" >
+         
+          <p class="animated" data-animation="fadeInUp">
+            We work to connect readers with independent booksellers all over
+             the world. We believe local bookstores are essential community
+              hubs that foster culture, curiosity, and a love of reading, 
+              and we're committed to helping them survive and thrive. 
+              Our platform gives independent bookstores tools to compete 
+              online and financial support to help them maintain their 
+              presence in local communities.
+          </p>
+        </div>
+
+        <div class="animated someFacts" data-animation="fadeInRight">
+          <span class="far fa-lightbulb"></span>
+          <p>
+            Some <em>statistics</em> 
+            
+          </p>
+        </div>
+
+        <div class="imgCounters animated" data-animation="fadeInUp">
+          <div class="overlay"></div>
+        </div>
+      </section>
+
+      <hr
+        id="collection"
+        class="text-center animated"
+        data-animation="fadeInRightLong"
+      />
+
+      <section class="row collection currentSection" data-nav="#collection">
+        <h1 class="text-center animated" data-animation="fadeInLeftLong">
+          Our Collection
+        </h1>
+        <div class="searchFilter" >
+          <div class="filterContainer animated" data-animation="fadeInLeft">
+            <select name="genres" id="genres">
+              <option value="all">all genres</option>
+              <option value="action">action</option>
+              <option value="horror">horror</option>
+              <option value="drama">drama</option>
+              <option value="westren">westren</option>
+              <option value="romance">romance</option>
+              <option value="thriller">thriller</option>
+          </select>
+          </div>
+          <div class="searchContainer animated" data-animation="fadeInRight">
+            <div class="mainPart">
+              <label for="search" class="sr-only">Search</label>
+              <input type="search" id="search" name="search" placeholder="Search by name.." class="search">
+              <span class="fas fa-search searchBtn"></span>
+            </div>
+            <span class="cancel">X</span>
+          </div>
+        </div>       
+      </section>
+
+      <hr
+        id="contact"
+        class="text-center animated"
+        data-animation="fadeInRightLong"
+      />
+
+      <section class="row contact currentSection" data-nav="#contact">
+        <h1
+          id="contact"
+          class="text-center animated"
+          data-animation="fadeInLeftLong"
+        >
+          Contact
+        </h1>
+        <div class="info">
+          <p class="animated" data-animation="fadeInUp">
+            Get In Touch<br />With Us
+          </p>
+          <address class="detailedInfo animated" data-animation="fadeInUp">
+            <p class="address"><span>🏠</span> Tartus, Syria</p>
+            <p class="phone"><span>📱</span> (+963) 966562988</p>
+            <p class="email"><span>📧</span> dannymou2@gmail.com</p>
+          </address>
+        </div>
+        <div class="map animated" data-animation="fadeInUpLong">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d929444.1527010534!2d35.872256325940924!3d32.46602078539635!2m3!1f0!2f22.19787780686808!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x15217e77890fb9a3%3A0xa072a491096e24b!2zVGFydHVz4oCOLCBTeXJpYQ!5e1!3m2!1sen!2s!4v1574462179454!5m2!1sen!2s"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <a class="scrollUp" href="#top"
+        ><span class="arrow-up fas fa-arrow-up"></span
+      ></a>
+    </main>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <p class="copyright"></p>
+        <div class="row">
+          <p class="name"><a href="#"><span class="grayNav">Wisdom </span>Library</a></p>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/danny.mousa.98"
+              target="_blank"
+              title="My Facebook Account"
+            >
+              <span class="fab fa-facebook-f"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dannymousa/"
+              target="_blank"
+              title="My Linkedin Account"
+            >
+              <span class="fab fa-linkedin-in"></span>
+            </a>
+            <a
+              href="https://github.com/Dani-Mousa"
+              target="_blank"
+              title="My GitHub Account"
+            >
+              <span class="fab fa-github"></span>
+            </a>
+            <a
+              href="mailto:dannymou2@gmail.com?subject=Mail from my portfolio"
+              target="_blank"
+              title="My Gmail Account"
+            >
+              <span class="far fa-envelope"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

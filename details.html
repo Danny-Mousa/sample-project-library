@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wisdom Library</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet prefetch" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
+    <script src="https://kit.fontawesome.com/ece5514f1a.js"></script>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/detailsScript.js"></script>
+  </head>
+
+  <body id="top">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#collapsable-nav"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            <a href="#"><span class="grayNav">Wisdom </span>Library</a>
+          </div>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html" target="_blank">Home</a>
+            </li>
+          </ul>
+          <!-- #nav-list -->
+        </div>
+        <!-- .collapse .navbar-collapse -->
+      </nav>
+    </header>
+
+    <main id="main-content" class="container-fluid">
+      <section class="jumbotron currentSection" data-nav="#">
+        <div class="overlay"></div>
+        <div class="brief">
+          <p class="animatedText" data-animation="fallB">
+            “Books are a uniquely portable magic”
+          </p>
+          <p class="animatedText" data-animation="fallC">
+            ―Stephen King
+          </p>
+          <div class="homeBtn">
+            <a href="index.html#contact" target="_blank" class="animatedText hidden">Contact</a>
+            <a
+              href="index.html#collection"
+              target="_blank"
+              class="animatedText hidden"
+              >Our Collection</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="row about" data-nav="#about">
+        <div class="content">
+          <div class="imgContainer"></div>
+          <h1 class="text-center book-title" ></h1>
+          <h2 class="book-writer"></h2>
+          <span class="genre"></span>
+            <p class="book-description" data-animation="fadeInUp"></p>
+        </div>
+       
+      </section>
+
+      <hr
+        id="collection"
+        class="text-center"
+      />
+      <a class="scrollUp" href="#top"><span class="arrow-up fas fa-arrow-up"></span></a>
+    </main>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <p class="copyright"></p>
+        <div class="row">
+          <p class="name"><a href="#"><span class="grayNav">Wisdom </span>Library</a></p>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/danny.mousa.98"
+              target="_blank"
+              title="My Facebook Account"
+            >
+              <span class="fab fa-facebook-f"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dannymousa/"
+              target="_blank"
+              title="My Linkedin Account"
+            >
+              <span class="fab fa-linkedin-in"></span>
+            </a>
+            <a
+              href="https://github.com/Dani-Mousa"
+              target="_blank"
+              title="My GitHub Account"
+            >
+              <span class="fab fa-github"></span>
+            </a>
+            <a
+              href="mailto:dannymou2@gmail.com?subject=Mail from my portfolio"
+              target="_blank"
+              title="My Gmail Account"
+            >
+              <span class="far fa-envelope"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
